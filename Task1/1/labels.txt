@@ -1,0 +1,5 @@
+Sign vs Cosine Functions.
+Sigmoid Function.
+Laplace Transformation.
+Eigen Value Problem.
+Theory of Vectors.
