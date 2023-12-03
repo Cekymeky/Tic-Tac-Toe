@@ -79,7 +79,7 @@ public:
 int main()
 {
     Set<int> integer(1, 2, 3);
-    Set<string> integer2(1, 2, 3, 4);
+    Set<int> integer2(1, 2, 3, 4);
     integer.add(6);
     integer.remove(3);
     integer.size();
