@@ -546,7 +546,7 @@ fabric.properties
 *.user
 bin/
 obj/
-PDF,Word,Givens/XO_OOP_wRandom/XO_OOP_wRandom.layout
+/XO_OOP_wRandom/XO_OOP_wRandom.layout
 
 Q1/.vscode/*
 Q1/build/*
