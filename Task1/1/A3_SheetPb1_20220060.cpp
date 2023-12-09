@@ -1,3 +1,10 @@
+// File name:A3_SheetPb1_20220060
+// Purpose: (file) label generator
+// Author(s):Islam Yasser Zakaria
+// ID(s):20220060
+// Section:13
+// Date:9/12/2023
+
 #include <bits/stdc++.h>
 
 using namespace std;
