@@ -557,6 +557,10 @@ Q5/build/*
 Q6/.vscode/*
 Q6/build/*
 
+Task2/.vscode/*
+Task2/build/*
+Task2/XO_OOP_wRandom/build/*
+
 # Prerequisites
 *.d
 
