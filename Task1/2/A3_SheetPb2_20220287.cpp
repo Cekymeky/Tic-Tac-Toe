@@ -115,11 +115,13 @@ StringSet::StringSet(string data)
 // Method to add a word to the set
 void StringSet::add(string keyword)
 {
-    string word = keyword;
-    transform(word.begin(), word.end(), word.begin(), ::tolower);
-    if (std::find(query.begin(), query.end(), word) == query.end())
+    StringSet temp(keyword);
+    for (auto &word : temp.query)
     {
-        query.push_back(word);
+        if (std::find(query.begin(), query.end(), word) == query.end())
+        {
+            query.push_back(word);
+        }
     }
 }
 
