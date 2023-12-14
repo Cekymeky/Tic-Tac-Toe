@@ -22,6 +22,14 @@ RandomPlayer::RandomPlayer(char symbol, int dimension) : Player(symbol)
 // Generate a random move
 void RandomPlayer::get_move(int &x, int &y)
 {
+    x = (int)(rand() / (RAND_MAX + 1.0) * dimension);
+    y = (int)(rand() / (RAND_MAX + 1.0) * dimension);
+}
+
+Pyramic_RandomPlayer::Pyramic_RandomPlayer(char symbol, int dimension) : RandomPlayer(symbol, dimension) {}
+
+void Pyramic_RandomPlayer::Pyramic_get_move(int &x, int &y)
+{
     x = rand() % dimension;
     y = rand() % (2 * x + 1);
 }

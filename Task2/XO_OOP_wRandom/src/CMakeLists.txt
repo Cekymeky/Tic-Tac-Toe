@@ -1,4 +1,4 @@
-add_library(X_O GameManager.cpp Player.cpp  RandomPlayer.cpp X_O_Board.cpp)
+add_library(X_O GameManager.cpp Player.cpp  RandomPlayer.cpp Pyramic_X_O_Board.cpp)
 add_executable(pyramic pyramic.cpp )
 add_executable(ramly X_O_App.cpp)
 target_link_libraries(pyramic PRIVATE X_O)

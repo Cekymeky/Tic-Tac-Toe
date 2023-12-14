@@ -4,7 +4,7 @@
 // Version: 1
 #ifndef _BoardGame_CLASSES_H
 #define _BoardGame_CLASSES_H
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Board
@@ -38,6 +38,16 @@ class X_O_Board : public Board
 {
 public:
     X_O_Board();
+    bool update_board(int x, int y, char mark);
+    void display_board();
+    bool is_winner();
+    bool is_draw();
+    bool game_is_over();
+};
+class pyramic_xo_board : public Board
+{
+public:
+    pyramic_xo_board();
     bool update_board(int x, int y, char mark);
     void display_board();
     bool is_winner();
@@ -85,6 +95,14 @@ public:
     RandomPlayer(char symbol, int dimension);
     // Generate a random move
     void get_move(int &x, int &y);
+};
+
+class Pyramic_RandomPlayer : public RandomPlayer
+{
+public:
+    // Take a symbol and pass it to parent
+    Pyramic_RandomPlayer(char symbol, int dimension); // Generate a random move
+    void Pyramic_get_move(int &x, int &y);
 };
 
 ///////////////////////////////////////////

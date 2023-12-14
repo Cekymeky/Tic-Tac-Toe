@@ -17,7 +17,7 @@ int main()
         // Player pointer points to child
         players[1] = new RandomPlayer('o', 3);
 
-    GameManager x_o_game(new X_O_Board(), players);
+    GameManager x_o_game(new pyramic_xo_board(), players);
     x_o_game.run();
     system("pause");
 }
