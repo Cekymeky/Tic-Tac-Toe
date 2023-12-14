@@ -20,4 +20,5 @@ int main()
     GameManager x_o_game(new pyramic_xo_board(), players);
     x_o_game.run();
     system("pause");
+    // islam
 }
