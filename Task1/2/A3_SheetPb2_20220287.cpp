@@ -1,6 +1,6 @@
 // File name: A3_SheetPb2_20220287.cpp
 // Purpose:
-// Author(s): Mohammad Zeinhom Anwar      
+// Author(s): Mohammad Zeinhom Anwar
 // ID(s): 20220287
 // Section: s29
 // Date: 12/09/2023
@@ -115,9 +115,13 @@ StringSet::StringSet(string data)
 // Method to add a word to the set
 void StringSet::add(string keyword)
 {
-    if (std::find(query.begin(), query.end(), keyword) == query.end())
+    StringSet temp(keyword);
+    for (auto &word : temp.query)
     {
-        query.push_back(keyword);
+        if (std::find(query.begin(), query.end(), word) == query.end())
+        {
+            query.push_back(word);
+        }
     }
 }
 
@@ -210,7 +214,8 @@ int main()
     s1.print();
 
     // Add a word and print the updated set
-    s1.add("and");
+    s1.add("AND");
+    s1.print();
 
     // Create another StringSet object using a provided string
     StringSet s2("Hello, world! This is a sample string. And Hello, world!");
